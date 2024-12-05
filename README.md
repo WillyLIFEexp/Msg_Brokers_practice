@@ -16,15 +16,15 @@ This is a practice for message brokers with RabbitMQ
 ## :closed_book: Project Directory Structure
 ```bash
 Msg_Brokers_Practice/
-├── consumer/          # The demo.gif 
-│ ├── consumer.py      # Contains API endpoints 
-│ └── Dockerfile       # Docker configuration file
-├── produer/           # The demo.gif 
-│ ├── producer.py      # Contains API endpoints 
-│ └── Dockerfile       # Docker configuration file 
+├── consumer/          # Contains consumer codes 
+│ ├── consumer.py      # Source code for consumer
+│ └── Dockerfile       # Consumer Docker configuration file
+├── producer/          # Contains producer code
+│ ├── producer.py      # Source code for producer
+│ └── Dockerfile       # Producer Docker configuration file 
 ├── imgs/              # The demo.gif 
 ├── requirements.txt   # Python dependencies 
-├── docker-compose.yml # Docker configuration file 
+├── docker-compose.yml # Docker compose configuration file 
 └── README.md          # Documentation for the project
 ```
 
