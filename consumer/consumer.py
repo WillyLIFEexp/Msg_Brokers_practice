@@ -18,13 +18,7 @@ def receive_message():
     channel.queue_declare(queue='test_queue')
 
     def callback(ch, method, properties, body):
-        logging.info('-'*30)
-        for i in range(5):
-            logging.info('')
         logging.info(f" [x] Received {body.decode()}")
-        for i in range(5):
-            logging.info('')
-        logging.info('-'*30)
 
     channel.basic_consume(queue='test_queue', on_message_callback=callback, auto_ack=True)
 

@@ -11,14 +11,8 @@ def send_greet_message():
 
     channel.queue_declare(queue='test_queue')
     message = 'Hello World!'
-    logging.info('-'*30)
-    for i in range(5):
-        logging.info('')
     logging.info('Pushing data to queue')
     channel.basic_publish(exchange='', routing_key='test_queue', body=message)
-    for i in range(5):
-        logging.info('')
-    logging.info('-'*30)
     connection.close()
 
 if __name__ == "__main__":
