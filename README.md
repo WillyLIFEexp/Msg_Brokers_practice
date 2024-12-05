@@ -4,9 +4,7 @@ This is a practice for message brokers with RabbitMQ
 ## :hammer_and_pick: Technologies Used
 - **Languages**: Python
 - **Message Broker**: RabbitMQ
-- **Other Libraries**: 
-  - Pytest
-  - Pika (for RabbitMQ client interactions)
+- **Other Libraries**: Pika (for RabbitMQ client interactions)
 - **Containerization**: Docker, Docker Compose
 
 ## :gear: Prerequisites
